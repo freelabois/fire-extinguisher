@@ -174,6 +174,7 @@ return [
         // Freelabois\FiEx\Providers\BroadcastServiceProvider::class,
         Freelabois\FiEx\Providers\EventServiceProvider::class,
         Freelabois\FiEx\Providers\RouteServiceProvider::class,
+        Freelabois\FiEx\Providers\DotEnvServiceProvider::class
 
     ],
 
