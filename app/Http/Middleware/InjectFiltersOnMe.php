@@ -38,8 +38,8 @@ class InjectFiltersOnMe
                 if ($value) {
                     if ($value == 'me') {
                         $user = auth()->user();
-                        $request->route()->setParameter($route_param, $user->usu_codigo);
-                        $request->request->set('user', $user->usu_codigo);
+                        $request->route()->setParameter($route_param, $user->id);
+                        $request->request->set('user', $user->id);
                     } else {
                         $route_param = $this->user_repository->find($value);
                         $request->request->set('user', $route_param->id);
