@@ -1,7 +1,7 @@
 module.exports = {
     // proxy API requests to Valet during development
     devServer: {
-        proxy: 'http://fire-extinguisher.test',
+        proxy: 'http://fire-extinguisher.test:8080',
         disableHostCheck: true,
     },
 
