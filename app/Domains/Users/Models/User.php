@@ -1,6 +1,6 @@
 <?php
 
-namespace Freelabois\FiEx\Domains\Users\Models;
+namespace Domains\Users\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -39,6 +39,6 @@ class User extends Authenticatable
 
     public function findForPassport($username)
     {
-        return $this->where('username', $username)->first();
+        return $this->where('username', $username)->orWhere('email', $username)->first();
     }
 }

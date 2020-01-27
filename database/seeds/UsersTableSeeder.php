@@ -1,6 +1,6 @@
 <?php
 
-use Freelabois\FiEx\Domains\Users\Models\User;
+use Domains\Users\Models\User;
 use Illuminate\Database\Seeder;
 class UsersTableSeeder extends Seeder
 {

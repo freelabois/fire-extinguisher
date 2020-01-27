@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use \Freelabois\FiEx\Domains\Users\Models\User;
+use \Domains\Users\Models\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 

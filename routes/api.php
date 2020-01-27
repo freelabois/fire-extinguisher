@@ -12,12 +12,15 @@
 */
 
 
-Route::post('/login', 'Users\AuthController@login')->name('login');
-
+Route::post('/login', Users\Controllers\LoginController::class)->name('login');
 
 Route::group(["middleware" => ["auth:api", 'inject.filters.me']], function () {
 
-    Route::post('/logout', 'Users\AuthController@logout')->name('logout');
+    include 'api/users.php';
+    include 'api/tickets.php';
+
+
+    Route::post('/logout', Users\Controllers\LogoutController::class)->name('logout');
 });
 
 

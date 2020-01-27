@@ -41,6 +41,14 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
     ],
 
     /*
@@ -63,7 +71,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Freelabois\FiEx\Domains\Users\Models\User::class,
+            'model' => Domains\Users\Models\User::class,
         ],
     ],
 
